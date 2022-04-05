@@ -63,6 +63,6 @@ public class Lampe {
 	public boolean isAllume() {
 		return allume;
 	}
->>>>>>> cce35d24d2fb273f19769b84644e37e3446df9e8
+
 }
 
