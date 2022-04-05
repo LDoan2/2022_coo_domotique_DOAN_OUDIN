@@ -10,12 +10,13 @@ public class TelecommandeTest {
         assertEquals(l.toString(),t.toString(),"n'est pas la bonne lampe");
     }
 
+    @Test
     public void ajout1Element(){
         Lampe l =new Lampe("Led");
         Lampe l2 = new Lampe("chaud")
         Telecommande t = new Telecommande();
         t.ajouterLampe(l);
         t.ajouterLampe(l2);
-        
+
     }
 }
