@@ -8,7 +8,7 @@ public class Telecommande {
     }
 
     public void ajouterLampe(Lampe l){
-        throw new Error (" code non ecrit ");
+        this.lampe.add(l);
     }
 
     public void activerLampe(int i){
@@ -16,7 +16,7 @@ public class Telecommande {
     }
 
     public void desactiverLampe(int i){
-        throw new Error (" code non ecrit ");
+        this.lampe.get(i).eteindre();
     }
 
     public void activerTout(){
@@ -24,7 +24,11 @@ public class Telecommande {
     }
 
     public String toString(){
-        throw new Error(" code non ecrit ");
+        String ch = "";
+        for (int i = 0; i < this.lampe.size();i++){
+            ch += this.lampe.get(i).toString()+"\n";
+        }
+        return ch;
     }
 
 }
