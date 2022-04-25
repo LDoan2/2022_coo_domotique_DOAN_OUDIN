@@ -1,0 +1,38 @@
+@startuml
+
+
+
+class Lampe{
+-allume : boolean
++Lampe(String paramNom)
++allumer()
++eteinfre()
++toString() : String
++isAllume() : boolean
+}
+
+
+class Telecommande{
+-lampe : ArrayList<Lampe>
+-hifi : ArrayList<Hifi>
++Telecommande()
++ajouterLampe(Lampe l)
++activerLampe(int i)
++desactiverLampe(int i)
++ajouterHihi(Hifi h)
++activerHifi(int i)
++desactiverHifi(int i)
++activerTout()
++toString() : String
+}
+
+
+
+class Hifi {
+-son : int
++allumer()
++eteindre()
++toString() : String
+}
+
+@enduml
