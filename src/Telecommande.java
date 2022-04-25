@@ -20,7 +20,9 @@ public class Telecommande {
     }
 
     public void activerTout(){
-        throw new Error(" code non ecrit ");
+        for (int i = 0 ; i < this.lampe.size; i++){
+            this.lampe.get(i).allumer();
+        }
     }
 
     public String toString(){
