@@ -2,9 +2,11 @@ import java.util.ArrayList;
 
 public class Telecommande {
     ArrayList<Lampe> lampe;
+    ArrayList<Hifi> hifi;
 
     public Telecommande(){
         this.lampe = new ArrayList<Lampe>();
+        this.hifi = new ArrayList<Hifi>();
     }
 
     public void ajouterLampe(Lampe l){
@@ -20,7 +22,7 @@ public class Telecommande {
     }
 
     public void activerTout(){
-        for (int i = 0 ; i < this.lampe.size; i++){
+        for (int i = 0 ; i < this.lampe.size(); i++){
             this.lampe.get(i).allumer();
         }
     }
