@@ -32,6 +32,9 @@ public class Telecommande {
         for (int i = 0; i < this.lampe.size();i++){
             ch += this.lampe.get(i).toString()+"\n";
         }
+        for (int i = 0; i < this.hifi.size();i++){
+            ch+= this.hifi.get(i).toString()+"\n";
+        }
         return ch;
     }
 
