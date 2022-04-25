@@ -35,4 +35,8 @@ class Hifi {
 +toString() : String
 }
 
+
+Telecommande "*"-->"*" Lampe :-lampe
+Telecommande "*"--> "*"Hifi  : -hifi
+
 @enduml
