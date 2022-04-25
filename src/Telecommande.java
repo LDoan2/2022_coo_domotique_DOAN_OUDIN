@@ -1,8 +1,10 @@
+import java.util.ArrayList;
+
 public class Telecommande {
-    Lampe lampe;
+    ArrayList<Lampe> lampe;
 
     public Telecommande(){
-        this.lampe = null;
+        this.lampe = new ArrayList<Lampe>();
     }
 
     public void ajouterLampe(Lampe l){
