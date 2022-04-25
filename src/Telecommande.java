@@ -21,6 +21,18 @@ public class Telecommande {
         this.lampe.get(i).eteindre();
     }
 
+    public void ajouterHifi(Hifi h){
+        this.hifi.add(h);
+    }
+
+    public void activerHifi(int i){
+        this.hifi.get(i).allumer();
+    }
+
+    public void desactiverHifi(int i){
+        this.hifi.get(i).eteindre();
+    }
+
     public void activerTout(){
         for (int i = 0 ; i < this.lampe.size(); i++){
             this.lampe.get(i).allumer();
