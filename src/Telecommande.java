@@ -12,7 +12,7 @@ public class Telecommande {
     }
 
     public void activerLampe(int i){
-        throw new Error (" code non ecrit ");
+        this.lampe.get(i).allumer();
     }
 
     public void desactiverLampe(int i){
