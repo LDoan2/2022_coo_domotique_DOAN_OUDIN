@@ -25,6 +25,9 @@ public class Telecommande {
         for (int i = 0 ; i < this.lampe.size(); i++){
             this.lampe.get(i).allumer();
         }
+        for (int i = 0; i < this.hifi.size();i++){
+            this.hifi.get(i).allumer();
+        }
     }
 
     public String toString(){
