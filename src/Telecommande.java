@@ -7,8 +7,8 @@ public class Telecommande {
         this.appareil = new ArrayList<Appareil>();
     }
 
-    public void ajouterAppareil(Lampe l){
-        this.appareil.add(l);
+    public void ajouterAppareil(Appareil a){
+        this.appareil.add(a);
     }
 
     public void activerAppareil(int i){
