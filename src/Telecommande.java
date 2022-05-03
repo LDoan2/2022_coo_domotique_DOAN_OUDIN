@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
 public class Telecommande {
-    ArrayList<Lampe> lampe;
-    ArrayList<Hifi> hifi;
+    private ArrayList<Lampe> lampe;
+    private ArrayList<Hifi> hifi;
 
     public Telecommande(){
         this.lampe = new ArrayList<Lampe>();

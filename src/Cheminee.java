@@ -1,5 +1,4 @@
-public class Cheminee {
-    /**
+ /**
      * classe qui permet de modeliser une cheminee electrique
      * ce classe doit etre utilisee avec la telecommande
      *
@@ -52,4 +51,3 @@ public class Cheminee {
             return("cheminee: "+intensite);
         }
     }
-}
