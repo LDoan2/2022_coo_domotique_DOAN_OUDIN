@@ -1,5 +1,9 @@
 public class ChemineeAdaptHerite extends Cheminee implements Appareil {
 
+    public ChemineeAdaptHerite(){
+        super();
+    }
+
     public void eteindre(){
         this.changerIntensite(0);
     }
