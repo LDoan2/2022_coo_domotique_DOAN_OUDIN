@@ -1,54 +1,34 @@
 import java.util.ArrayList;
 
 public class Telecommande {
-    private ArrayList<Lampe> lampe;
-    private ArrayList<Hifi> hifi;
+    private ArrayList<Appareil> appareil;
 
     public Telecommande(){
-        this.lampe = new ArrayList<Lampe>();
-        this.hifi = new ArrayList<Hifi>();
+        this.appareil = new ArrayList<Appareil>();
     }
 
-    public void ajouterLampe(Lampe l){
-        this.lampe.add(l);
+    public void ajouterAppareil(Lampe l){
+        this.appareil.add(l);
     }
 
-    public void activerLampe(int i){
-        this.lampe.get(i).allumer();
+    public void activerAppareil(int i){
+        this.appareil.get(i).allumer();
     }
 
-    public void desactiverLampe(int i){
-        this.lampe.get(i).eteindre();
-    }
-
-    public void ajouterHifi(Hifi h){
-        this.hifi.add(h);
-    }
-
-    public void activerHifi(int i){
-        this.hifi.get(i).allumer();
-    }
-
-    public void desactiverHifi(int i){
-        this.hifi.get(i).eteindre();
+    public void desactiverAppareil(int i){
+        this.appareil.get(i).eteindre();
     }
 
     public void activerTout(){
-        for (int i = 0 ; i < this.lampe.size(); i++){
-            this.lampe.get(i).allumer();
-        }
-        for (int i = 0; i < this.hifi.size();i++){
-            this.hifi.get(i).allumer();
+        for (int i = 0 ; i < this.appareil.size(); i++){
+            this.appareil.get(i).allumer();
         }
     }
 
     public String toString(){
         String ch = "";
-        for (int i = 0; i < this.lampe.size();i++){
-            ch += this.lampe.get(i).toString()+"\n";
-        }
-        for (int i = 0; i < this.hifi.size();i++){
-            ch+= this.hifi.get(i).toString()+"\n";
+        for (int i = 0; i < this.appareil.size();i++){
+            ch += this.appareil.get(i).toString()+"\n";
         }
         return ch;
     }
