@@ -11,21 +11,16 @@ class Lampe{
 +isAllume() : boolean
 }
 
+interface Appareil{
++allumer()
++eteindre()
+}
 
 class Telecommande{
--lampe : ArrayList<Lampe>
--hifi : ArrayList<Hifi>
--tele : ArrayList<Television>
 +Telecommande()
-+ajouterLampe(Lampe l)
-+activerLampe(int i)
-+desactiverLampe(int i)
-+ajouterTelevision(Television t)
-+activerTelevision(int i)
-+desactiverTelevision(int i)
-+ajouterHihi(Hifi h)
-+activerHifi(int i)
-+desactiverHifi(int i)
++ajouterAppareil(Appareil a)
++activerAppareil(int i)
++desactiverAppareil(int i)
 +activerTout()
 +toString() : String
 }
@@ -39,6 +34,20 @@ class Hifi {
 +toString() : String
 }
 
+class Cheminee{
++intensitée : int
++Cheminee()
++changerIntensite(int i)
++getLumiere() : int
++toString() : String
+}
+
+class ModifierCheminee{
++eteindre()
++allumer()
++toString() :String
+}
+
 class Television{
 -son : int
 +allumer()
@@ -47,8 +56,13 @@ class Television{
 }
 
 
-Telecommande "*"-->"*" Lampe :-lampe
-Telecommande "*"--> "*"Hifi  : -hifi
-Telecommande "*"--> "*"Television  : -tele
+Appareil  <|.. Lampe
+Appareil  <|..  Hifi
+Appareil  <|..  Television
+Appareil <|.. ModifierCheminee
+Telecommande "*" --> "*" Appareil : -appareil
+ModifierCheminee "*" --> "1" Cheminee : -cheminee
+ModifierCheminee --|>  Cheminee
+
 
 @enduml
