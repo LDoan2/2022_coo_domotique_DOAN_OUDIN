@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="thermostat">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/src/thermostat.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/thermostat.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
