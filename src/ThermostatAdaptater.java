@@ -2,16 +2,20 @@ import thermos.Thermostat;
 
 public class ThermostatAdaptater implements Appareil{
 
-    Thermostat t;
+    Thermostat thermostat;
+
+    public ThermostatAdaptater(Thermostat t){
+        this.thermostat = t;
+    }
 
     @Override
     public void allumer() {
-        this.t.baisserTemperature();
+        thermostat.baisserTemperature();
     }
 
     @Override
     public void eteindre() {
-        this.t.baisserTemperature();
+        thermostat.baisserTemperature();
     }
 
 
