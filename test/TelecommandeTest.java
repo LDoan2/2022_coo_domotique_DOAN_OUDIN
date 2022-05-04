@@ -8,7 +8,7 @@ public class TelecommandeTest {
         Lampe l =new Lampe("Led");
         Telecommande t = new Telecommande();
         t.ajouterAppareil(l);
-        assertEquals("n'est pas la bonne lampe",l.toString(),t.toString());
+        assertEquals(l.toString(),t.getAppareil(0).toString(),"n'est pas la bonne lampe");
     }
 
     @Test
@@ -34,7 +34,7 @@ public class TelecommandeTest {
         t.activerAppareil(1);
 
         // On verifie
-        assertEquals("La lempe n°1 n'est pas allumer",false,((Lampe)t.getAppareil(0)).isAllume());
-        assertEquals("La lempe n°1 n'est pas allumer",true,((Lampe)t.getAppareil(1)).isAllume());
+        assertEquals(false,((Lampe)t.getAppareil(0)).isAllume(),"La lempe n°1 n'est pas allumer");
+        assertEquals(true,((Lampe)t.getAppareil(1)).isAllume(),"La lempe n°1 n'est pas allumer");
     }
 }
