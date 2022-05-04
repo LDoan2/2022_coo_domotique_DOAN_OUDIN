@@ -1,6 +1,6 @@
 public class ChemineeAdaptAssoc implements Appareil{
 
-    Cheminee cheminee;
+    private Cheminee cheminee;
 
     public ChemineeAdaptAssoc(Cheminee c){
         this.cheminee = c;
