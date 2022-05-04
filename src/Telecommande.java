@@ -25,6 +25,14 @@ public class Telecommande {
         }
     }
 
+    public Appareil getAppareil(int i){
+        return appareil.get(i);
+    }
+
+    public int getNombre(){
+        return appareil.size();
+    }
+
     public String toString(){
         String ch = "";
         for (int i = 0; i < this.appareil.size();i++){
